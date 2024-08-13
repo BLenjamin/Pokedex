@@ -9,8 +9,8 @@ function pokemonCard(index) {
         <div id="lowerSection">
             <span id="pokeText">${flavorTexts[index].flavor_text}</span>
             <div id="elements">
-                <div class="element" id="element1">${fillTypes1(index)}</div>
-                <div class="element" id="element2">${fillTypes2(index)}</div>
+                <div id="element1" class="element ${fillTypes1(index)}">${fillTypes1(index)}</div>
+                <div id="element2" class="element ${fillTypes2(index)}">${fillTypes2(index)}</div>
             </div>
         </div>
 </div>`
@@ -20,3 +20,15 @@ function capitalizeFirstLetter(string) {
     let newString = string.charAt(0).toUpperCase() + string.slice(1);
     return newString;
 }
+
+/*function createElements(index) {
+    if (pokemonDetails[index]["types"].length == 1) {
+    document.getElementById("elements").innerHTML = `<div class="element" id="element_${filltypes1(index)}">
+    </div>`
+    } else {
+        document.getElementById("elements").innerHTML = `<div class="element" id="element_${fillTypes1(index)}">
+        </div>
+        <div class="element" id="element_${fillTypes2(index)}">
+        </div>`
+    }
+}*/

@@ -44,8 +44,13 @@ header {
 }
 
 .element {
-    border: 1px solid;
+    border: 1px solid black;
     border-radius: 2px;
+    color: whitesmoke;
+}
+
+.noSecondElement {
+    display: none;
 }
 
 #elements {

@@ -73,10 +73,10 @@ function fillTypes1(index) {
 }
 
 function fillTypes2(index) {
-    if (pokemonDetails[index]["types"].length == 2)  {
-        return pokemonDetails[index]["types"][1]["type"]["name"];
+    if (pokemonDetails[index]["types"].length == 1)  {
+        return "noSecondElement";   
     } else {
-        return "";
+       return pokemonDetails[index]["types"][1]["type"]["name"];
     }
 }
 
